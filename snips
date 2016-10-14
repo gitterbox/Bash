@@ -1,2 +1,3 @@
 sudo nmap -sP $NET| awk '/^Nmap/{ip=$NF}/$MAC/{print ip}'
+git push origin [your-branch] 
 
