@@ -1,4 +1,5 @@
 sudo nmap -sP $NET| awk '/^Nmap/{ip=$NF}/$MAC/{print ip}'
 git add file && git commit -m "details" &&  git push origin [your-branch] 
 sudo iptables -A OUTPUT -p tcp -m string --string "www.name.de" --algo kmp -j REJECT
+test
 
