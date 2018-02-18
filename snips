@@ -5,3 +5,6 @@ sudo iptables -A OUTPUT -p tcp -m string --string "www.name.de" --algo kmp -j RE
 tcpdump -w file.pcap [host] -i [iface]
 # view 
 tcpdump -qns 0 -X -r file.pcap
+# bash 
+# paste from middle mouse 
+# 
