@@ -11,4 +11,5 @@ tcpdump -qns 0 -X -r file.pcap
 xdotool click 2
 # load files via http[s] using wget omit index.html
 wget --recursive --no-parent [url] -R "index.html*"
-
+# swap keys
+setxkbmap -option caps:swapescape
