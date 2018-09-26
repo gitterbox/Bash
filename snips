@@ -13,3 +13,7 @@ xdotool click 2
 wget --recursive --no-parent [url] -R "index.html*"
 # swap keys
 setxkbmap -option caps:swapescape
+# firewalld (fedora)
+firewall-cmd add-service=mountd 
+firewall-cmd reload
+# ufw (ubuntu)
