@@ -17,3 +17,5 @@ setxkbmap -option caps:swapescape
 firewall-cmd add-service=mountd 
 firewall-cmd reload
 # ufw (ubuntu)
+# tmux
+tmux kill-session -t <name>
