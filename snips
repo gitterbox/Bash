@@ -19,3 +19,10 @@ firewall-cmd reload
 # ufw (ubuntu)
 # tmux
 tmux kill-session -t <name>
+# mount cifs share (cifs-utils) required
+sudo mount -t cifs -o username=${USER},password=${PASSWORD},uid=$(id -u),gid=$(id -g) //server-address/folder /mount/path/on/ubuntu
+# windows package manager choco
+# open powershell as admin
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
+choco install firefox
